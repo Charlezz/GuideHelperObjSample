@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/background_holder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:content="@+id/background"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/profile_holder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:content="@+id/profile_image"
+        app:layout_constraintBottom_toBottomOf="@+id/background_holder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintDimensionRatio="H,1:1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_holder" />
+
+    <android.support.constraint.Placeholder
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:content="@+id/btn_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</merge>
